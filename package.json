@@ -9,7 +9,7 @@
     "url": "git+https://github.com/hadmarine/clear-logger.git"
   },
   "bugs": "https://github.com/hadmarine/clear-logger/issues",
-  "homepage": "https://github.com/hadmarine/clear-logger#readme",
+  "homepage": "https://github.com/hadmarine/clear-logger",
   "author": "HADMARINE <contact@hadmarine.com>",
   "license": "MIT",
   "private": false,
