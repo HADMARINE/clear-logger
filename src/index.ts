@@ -57,7 +57,7 @@ function setLoggerName(name: string) {
       if (process.env.NODE_ENV === "production") return;
       const stack: string = new Error().stack || "_____UNDEFINED_____";
       logger(
-        `${chalk}${chalk.bgCyan.black(` DEBG `)}${chalk.cyan(
+        `${chalk.bgCyan.black(` DEBG `)}${chalk.cyan(
           ` ${message}${printStack ? chalk.gray(stack.slice(7)) : ""}`
         )}`,
         { appName: name }
