@@ -29,10 +29,12 @@ function initialize(name?: string) {
       if (process.env.NODE_ENV === "production") return;
       const stack: string =
         (message instanceof Error ? message.stack : new Error().stack) ||
-        "undfined";
+        "undefined";
       logger(
         `${chalk.bgCyan.black(` DEBG `)}${chalk.cyan(
-          ` ${message}${printStack ? chalk.gray(stack.slice(7)) : ""}`
+          ` ${message}${
+            printStack ? chalk.gray(stack.slice(stack.indexOf("\n"))) : ""
+          }`
         )}`,
         { appName: name }
       );
