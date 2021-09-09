@@ -73,7 +73,7 @@ export default {
   info: d.info,
   plain: logger,
   debug: d.debug,
-  succes: d.success,
+  success: d.success,
   clear: d.clear,
   customName: initialize,
 };
