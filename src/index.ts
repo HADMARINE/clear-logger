@@ -58,7 +58,7 @@ function initialize(name?: string) {
       });
     },
     success: (...message: string[]) => {
-      logger(`${chalk.bgGreen.black(` SUCC `)} ${chalk.green(...message)}`);
+      logger(`${chalk.bgGreen.black(` SUCC `)} ${chalk.green(...message)}`, {appName: name});
     },
     plain: logger,
     clear,
